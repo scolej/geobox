@@ -42,6 +42,9 @@ makeLambertProjectionRad refLat refLon stdP1 stdP2 =
 earthRadius :: Length
 earthRadius = kilometres 6371
 
+
+-- TODO This is almost certainly wrong. Need to improve and use the
+-- ellipsoid equations.
 project :: LambertProjection -> LatLon -> (Length, Length)
 project p ll = (scaleToMetres x, scaleToMetres y)
   where
