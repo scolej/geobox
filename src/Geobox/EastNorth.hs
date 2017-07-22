@@ -4,5 +4,7 @@ module Geobox.EastNorth
 
 import Geobox.Length
 
-data EastNorth = EastNorth Length Length
-
+data EastNorth = EastNorth
+  { easting :: Length
+  , northing :: Length
+  }
