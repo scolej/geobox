@@ -1,6 +1,8 @@
-resolver: lts-8.21
-packages:
-- .
-extra-deps: []
 flags: {}
 extra-package-dbs: []
+packages:
+- .
+extra-deps:
+- gloss-1.11.1.1
+- gloss-rendering-1.11.1.1
+resolver: lts-8.21
